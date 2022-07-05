@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = TestCICD
+build_property.ProjectDir = C:\Enzan_android_Codes\Csharp-desktop-CICD\TestCICD\
