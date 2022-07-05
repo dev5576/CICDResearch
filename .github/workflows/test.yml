@@ -35,6 +35,13 @@ jobs:
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
+      
+    - name: Lint Code Base
+      uses: github/super-linter@v4
+      env:
+        VALIDATE_ALL_CODEBASE: false
+        DEFAULT_BRANCH: "main"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
  
     # Restore the application to populate the obj folder with RuntimeIdentifiers
